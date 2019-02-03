@@ -10,11 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
+$this->group(['middleware' => ['auth'], 'namespace' => 'admin','prefix' => 'admin'], function(){
+	Route::get('/', 'AdminController@index')->name('admin.home');
+	Route::get('balance', 'BalanceController@index')->name('admin.balance');
 });
 
+Route::get('/', 'Site\SiteController@index');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
