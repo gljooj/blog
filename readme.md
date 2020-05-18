@@ -18,6 +18,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - Database agnostic [schema migrations](https://laravel.com/docs/migrations).
 - [Robust background job processing](https://laravel.com/docs/queues).
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- line
 
 Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
 
